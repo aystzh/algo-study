@@ -2,6 +2,7 @@ package aystzh.github.com.algo.linkedlist;
 
 /**
  * 翻转链表
+ * https://leetcode-cn.com/problems/reverse-linked-list/
  * Created by zhanghuan on 2021/8/12.
  */
 public class LinkedListReverse {
