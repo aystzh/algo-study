@@ -46,4 +46,36 @@ public class LinkedListReverse {
         }
     }
 
+
+    /**
+     * demo 翻转2到4的节点数据 返回新链表数据
+     * 1 -> 2 -> 3 -> 4 ->5
+     * 1 -> 4 -> 3 -> 2 ->5
+     */
+    class reverseLinkedList {
+
+        public ListNode solution(ListNode head, int left, int right) {
+            ListNode dummyHead = new ListNode(0);
+            dummyHead.next = head;
+            //初始化指针
+            ListNode g = dummyHead;
+            ListNode p = dummyHead.next;
+            //将指针移动到相对应位置
+            for (int i = 0; i < left - 1; i++) {
+                g = g.next;
+                p = p.next;
+            }
+
+            //头插法插入节点
+            for (int j = 0; j < right - left; j++) {
+                ListNode removed = p.next;
+                p.next = p.next.next;
+
+                removed.next = g.next;
+                g.next = removed;
+            }
+            return dummyHead.next;
+        }
+    }
+
 }
