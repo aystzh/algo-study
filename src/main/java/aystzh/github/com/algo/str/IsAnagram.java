@@ -13,7 +13,6 @@ public class IsAnagram {
     @Test
     public void test() {
         System.out.println(isAnagram("abcdd","dddabc"));
-
     }
 
     public boolean isAnagram(String first,String second) {
