@@ -3,6 +3,7 @@ package aystzh.github.com.algo.linkedlist;
 /**
  * 翻转链表
  * https://leetcode-cn.com/problems/reverse-linked-list/
+ * https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/xnnhm6/
  * Created by zhanghuan on 2021/8/12.
  */
 public class LinkedListReverse {
@@ -32,7 +33,7 @@ public class LinkedListReverse {
         public ListNode reverseListNode(ListNode head) {
             ListNode prev = null;
             ListNode current = head;
-            while (head != null) {
+            while (current != null) {
                 //临时节点用于保存当前节点下一个节点
                 ListNode tempNextNode = current.next;
                 //当前节点指向它前面的节点
