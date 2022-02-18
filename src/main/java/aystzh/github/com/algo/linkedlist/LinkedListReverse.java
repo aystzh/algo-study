@@ -8,7 +8,7 @@ package aystzh.github.com.algo.linkedlist;
  */
 public class LinkedListReverse {
 
-    class ListNode {
+   private class ListNode {
         int val;
         ListNode next;
 
